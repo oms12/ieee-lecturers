@@ -252,7 +252,7 @@ const Professor = (props) => {
           />
 
           <Professor_Content
-            name="Joseph Bigum"
+            name="Joseph Bigun"
             branch="abc"
             university_name="Halmstad University"
             university_address=""
