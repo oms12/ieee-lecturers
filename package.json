@@ -34,5 +34,8 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "mini-css-extract-plugin": "2.4.5"
+  }
 }

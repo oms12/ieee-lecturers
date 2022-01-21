@@ -15,7 +15,7 @@ function Popup(props)
            }}>+</div>
            <h2 className="heading">{props.show && props.show.heading}</h2>
            <br></br>
-           <p >{props.show && props.show.content}</p>
+           <p className="lecturecontent">{props.show && props.show.content}</p>
 	     </div> 
       </div> 
         </>

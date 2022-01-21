@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Popup from "../Popupdata/Popupdata";
 const Professor_Content = ({
   name,
+  biograhy,
   branch,
   university_name,
   university_address,
@@ -20,7 +21,7 @@ const Professor_Content = ({
         <p>
           <b className = "name" onClick={()=>
                     {
-                      show(true,name,"abc");
+                      show(true,name,biograhy);
                     }}>{name}</b>
         </p>
         {/* <p>{branch}</p> */}
@@ -40,6 +41,7 @@ const Professor_Content = ({
                     <b>Lecture Topic {index + 1}:   </b><a className="lecture" onClick={()=>
                     {
                       show(true,lecture,content[index]);
+                      console.log(content[index]);
                     }}>{lecture}</a>
                   </p>)
           })}

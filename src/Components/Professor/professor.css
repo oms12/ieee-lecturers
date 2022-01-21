@@ -24,6 +24,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 .left_border {
   width: 27%;
@@ -58,25 +59,26 @@
 
 .content_1 {
   width: 100%;
-  height: 25%;
+  height: fit-content ;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid rgba(128, 128, 128, 0.26);
-  margin-bottom: 30px;
+  flex-direction: row;
+  margin-bottom: 40px;
 }
 
 .picture {
   margin-left: 40px;
+  margin-right: 5%;
 }
 
 .img1 {
-  height: 40%;
-  width: 100%;
+  height: 150px;
+  width: 130px;
 }
 
 .writing-part {
   height: 100%;
-  margin-left: -10px;
   width: 75%;
 }
 .writing-part p {
@@ -100,12 +102,54 @@ a:hover{
 }
 .lecture{
   color: blue;
+  white-space: pre-wrap;
 }
 
 .name:hover{
   cursor: pointer;
   border-bottom: 2px solid green;
   color: green;
+}
+@media only screen and (max-width: 991px) {
+  html{
+    font-size: clamp(3rem, 1rem+10vw , 5rem);
+  }
+  .content_1{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .mid_para {
+    width: 150%;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .writing-part {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .content {
+    width: 100%;
+    height: 90%;
+    margin-top: 10%;
+  
+    position: absolute;
+  }
+  
+}
+@media only screen and (max-width: 470px) {
+  html{
+    font-size: clamp(3rem, 1rem+10vw , 5rem);
+  }
+  .left_border{
+    display: none;
+  }
+  .right_border{
+    display: none;
+  }
 }
 
 
