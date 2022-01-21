@@ -19,7 +19,7 @@ const Professor = (props) => {
       <div className="container">
         <div class="title">
           <div class="left_border"></div>
-          <p class="mid_para">CURRENT DISTINGUISHED LECTURERS</p>
+          <p class="mid_para">CURRENT DLP SPEAKERS</p>
           <div class="right_border"></div>
         </div>
         <div className="content">
