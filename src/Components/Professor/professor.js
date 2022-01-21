@@ -19,7 +19,7 @@ const Professor = (props) => {
       <div className="container">
         <div class="title">
           <div class="left_border"></div>
-          <p class="mid_para">CURRENT DISTINGUISHED LECTURERS</p>
+          <p class="mid_para">CURRENT DLP SPEAKERS</p>
           <div class="right_border"></div>
         </div>
         <div className="content">
@@ -31,8 +31,8 @@ const Professor = (props) => {
             university_address=""
             image={image2}
             research_topics = {[" abc, ","pqr"]}
-            lectures = {["Current trends and topics in iris presentation attack detection",
-                        "Face recognition accuracy differences across demographic groups"]}
+            lectures = {["Current Trends and Topics in Iris Presentation Attack Detection",
+                        "Face Recognition Accuracy Differences Across Demographic Groups"]}
             content = {["Iris recognition is increasingly used in large-scale applications. As a result, presentation attack detection for iris recognition takes on fundamental importance. This survey covers" + 
                         " the diverse research literature on this topic. Different categories of presentation attack"+
                         " are described and placed in an application-relevant framework, and the state of the art in"+
@@ -65,9 +65,9 @@ const Professor = (props) => {
             image={image3}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
             lectures = {["Future of Biometrics",
-                         "Biometrics and forensics",
-                         "Gait and soft biometrics",
-                         "Soft biometrics"]}
+                         "Biometrics and Forensics",
+                         "Gait and Soft Biometrics",
+                         "Soft Biometrics"]}
             show = {showpop}
             content={["Biometrics has made amazing progress in its (relatively) short history. This speaker" +
                       " started his research in 1984, on face recognition, before it was even called biometrics." +
@@ -131,7 +131,7 @@ const Professor = (props) => {
             name="Sarath Pankanti"
             biograhy = "abc"
             branch="Computer Science"
-            university_name="IBM research"
+            university_name="IBM Research"
             university_address=""
             image={image4}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -260,15 +260,14 @@ const Professor = (props) => {
           />
 
           <Professor_Content
-            name="Joseph Bigum"
-            biograhy = "abc"
+            name="Joseph Bigun"
             branch="abc"
             university_name="Halmstad University"
             university_address=""
             image={image1}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
-            lectures = {["Dense Maps of Orientation, Frequency And Phase ForExplainable Biometrics",
-                         "Fundamentals of Image Processing For Fingerprints By Wave and Particle Natures of Local Patches",
+            lectures = {["Dense Maps of Orientation, Frequency and Phase for Explainable Biometrics",
+                         "Fundamentals of Image Processing for Fingerprints by Wave and Particle Natures of Local Patches",
                          ]}
             show = {showpop}
             content={["A summary of main Fourier features along with their importance to human visual" + 
