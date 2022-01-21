@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .container {
@@ -57,7 +58,7 @@
 
 .content_1 {
   width: 100%;
-  height: 32%;
+  height: 25%;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid rgba(128, 128, 128, 0.26);
@@ -75,6 +76,8 @@
 
 .writing-part {
   height: 100%;
+  margin-left: -10px;
+  width: 75%;
 }
 .writing-part p {
   margin-bottom: 10px;
@@ -84,5 +87,25 @@
 }
 
 .lower_part {
-  margin-left: -150px;
+  /* margin-left: -150px; */
+  margin-top: 25px;
+  width: 100%;
 }
+a:hover{
+  
+  cursor: pointer;
+  border-bottom: 1px solid green;
+  color: green;
+
+}
+.lecture{
+  color: blue;
+}
+
+.name:hover{
+  cursor: pointer;
+  border-bottom: 2px solid green;
+  color: green;
+}
+
+
