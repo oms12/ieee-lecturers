@@ -32,11 +32,11 @@ const Professor = (props) => {
               a pool of leading experts who are willing to speak in meetings hosted by IEEE Chapters and
                 Sections. The operation of DLP is governed by a charter which council has recently adopted
                 and is available <a className="lecture" href={pdf} target="_blank">here</a>. 
-                The council has earlier endorsed two Distinguished Biometrics Lecturers.</span></p>
+                </span></p>
     
         </div>
         <div>
-              <p><span className="google-form">To organize a distinguished lecture, please fill the <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" > DLP Speaker Request Form</a> </span>
+              <p><span className="google-form">To organize a distinguished lecture, please read the <a className="lecture" href={pdf} target="_blank">guidelines</a> and submit a completed <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" > DLP Speaker Request Form</a> </span>
               </p>
         </div>
         </div> 
