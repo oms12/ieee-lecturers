@@ -19,7 +19,7 @@ const Professor = (props) => {
       <div className="container">
         <div class="title">
           <div class="left_border"></div>
-          <p class="mid_para">CURRENT DLP SPEAKERS</p>
+          <p class="mid_para">IEEE Biometrics Council DLP Speakers (2022-2024)</p>
           <div class="right_border"></div>
         </div>
         <div className="content">
@@ -27,7 +27,7 @@ const Professor = (props) => {
             name="Kevin Bowyer"
             biograhy = "abc"
             branch=" Computer Science and Engineering"
-            university_name="University of Notre Dame"
+            university_name="University of Notre Dame, USA"
             university_address=""
             image={image2}
             research_topics = {[" abc, ","pqr"]}
@@ -60,7 +60,7 @@ const Professor = (props) => {
             name="Mark Nixon"
             biograhy = "abc"
             branch="Electronics and Computer Science"
-            university_name="University of Southampton"
+            university_name="University of Southampton, UK"
             university_address=""
             image={image3}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -128,10 +128,10 @@ const Professor = (props) => {
           />
 
           <Professor_Content
-            name="Sarath Pankanti"
+            name="Sharath Pankanti"
             biograhy = "abc"
             branch="Computer Science"
-            university_name="IBM Research"
+            university_name="Microsoft , USA"
             university_address=""
             image={image4}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -185,7 +185,7 @@ const Professor = (props) => {
             name="Xilin Chen"
             biograhy = "abc"
             branch="abc"
-            university_name="Institute of Computing Technology, Chinese Academy of Sciences"
+            university_name="Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China"
             university_address=""
             image={image5}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -230,7 +230,7 @@ const Professor = (props) => {
             name="Yasushi Yagi"
             biograhy = "abc"
             branch="Computer Science"
-            university_name="Osaka University"
+            university_name="Osaka University, Japan"
             university_address=""
             image={image6}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -262,7 +262,7 @@ const Professor = (props) => {
           <Professor_Content
             name="Joseph Bigun"
             branch="abc"
-            university_name="Halmstad University"
+            university_name="Halmstad University, Sweden"
             university_address=""
             image={image1}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -315,7 +315,7 @@ const Professor = (props) => {
             name="Venu Govindaraju"
             biograhy = "abc"
             branch="Computer Science and Engineering"
-            university_name="State University of New York, Buffalo"
+            university_name="State University of New York, Buffalo, USA"
             university_address=""
             image={image7}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
