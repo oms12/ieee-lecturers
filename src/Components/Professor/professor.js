@@ -4,9 +4,9 @@ import image1 from "../../image/jseph bigun.jpg";
 import image2 from "../../image/kewin.jpg";
 import image3 from "../../image/mark nixon.jpg";
 import image4 from "../../image/sharath pankanti.jpg";
+import image7 from "../../image/venu.jpg";
 import image5 from "../../image/xilin chen.jpg";
 import image6 from "../../image/yashsuhi yagi.jpg";
-import image7 from "../../image/venu.jpg";
 import Popup from "../Popupdata/Popupdata";
 const Professor = (props) => {
   function showpop(ok,lecture,content)
@@ -131,7 +131,7 @@ const Professor = (props) => {
             name="Sharath Pankanti"
             biograhy = "abc"
             branch="Computer Science"
-            university_name="Microsoft , USA"
+            university_name="Microsoft, USA"
             university_address=""
             image={image4}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -325,7 +325,7 @@ const Professor = (props) => {
             show = {showpop} 
             content={["We present an overview of two decades of innovation in" + 
                       " perspective on the evolution of research in this area and the future of the field. We highlight" + 
-                      " handwriting recognition at the Govindaraju lab at the University at Buffalo and offer a" + 
+                      " handwriting recognition at the Govindaraju lab at the University at Buffalo and offer" + 
                       " our seminal work in handwriting recognition that was at the core of the first handwritten" + 
                       " address interpretation system used by the U.S. Postal Service, described as one of the first" + 
                       " practical success stories of AI and as a shining example of AI for the Social Good (Eric Horvitz," + 
@@ -335,7 +335,7 @@ const Professor = (props) => {
                       " our research, from the processing of healthcare forms for the NYS Department of Health for" + 
                       " deriving early indicators of outbreaks, to access to historical documents through word spotting," + 
                       " transcript mapping and other indexing schemes for digital libraries, to award-winning pre-" + 
-                      " processing techniques and multilingual OCR solutions.",
+                      "processing techniques and multilingual OCR solutions.",
                       "Given the pervasive use of e-commerce transactions and personal" + 
                       " and protects the privacy and online assets of individuals and organizations. We recommend a" + 
                       " data storage in the cloud, society has an urgent need for a robust process that authenticates" + 
