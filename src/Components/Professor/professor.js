@@ -1,4 +1,5 @@
 import "./professor.css";
+import pdf from "../../image/Charter_DLP_BC.pdf"
 import Professor_Content from "./professorcontent.js";
 import image1 from "../../image/jseph bigun.jpg";
 import image2 from "../../image/kewin.jpg";
@@ -16,7 +17,29 @@ const Professor = (props) => {
   }
   return (
     <>
+       
       <div className="container">
+      <div class="page-header">
+        <div className="main-header">
+            <h2>
+            DISTINGUISHED LECTURERS PROGRAM (DLP)		
+          </h2>  
+        </div>
+          <div className="header-contents">
+            <p><span>IEEE Biometrics Council has introduced the Distinguished
+            Lecturers Program (DLP) to support education related activities for the biometrics community.
+              The purpose of DLP is to increase awareness about topics relevant to Biometrics by creating
+              a pool of leading experts who are willing to speak in meetings hosted by IEEE Chapters and
+                Sections. The operation of DLP is governed by a charter which council has recently adopted
+                and is available <a className="lecture" href={pdf} target="_blank">here</a>. 
+                The council has earlier endorsed two Distinguished Biometrics Lecturers.</span></p>
+    
+        </div>
+        <div>
+              <p><span className="google-form">To organize a distinguished lecture, please fill the <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" > DLP Speaker Request Form</a> </span>
+              </p>
+        </div>
+        </div> 
         <div class="title">
           <div class="left_border"></div>
           <p class="mid_para">CURRENT DLP SPEAKERS</p>
@@ -363,7 +386,6 @@ const Professor = (props) => {
           />
         </div>
       </div>
-      <Popup />
     </>
   );
 };

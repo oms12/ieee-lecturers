@@ -5,7 +5,9 @@
   padding: 0;
   text-decoration: none;
 }
-
+.main-header{
+ border-bottom: 2px solid gray ;
+}
 .container {
   width: 70%;
   height: 130vh;
@@ -14,12 +16,29 @@
   margin-top: 5vh;
   position: relative;
 }
-
+.header-contents{
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.page-header{
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+.google-form{
+  color: red;
+  font-weight: bolder;
+  margin-top: 30px;
+}
 .title {
   position: absolute;
   width: 100%;
   height: 5%;
-
+  margin-top: 27px;
   color: black;
   display: flex;
   justify-content: space-around;
