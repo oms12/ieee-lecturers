@@ -31,24 +31,77 @@ const Professor = (props) => {
               The purpose of DLP is to increase awareness about topics relevant to Biometrics by creating
               a pool of leading experts who are willing to speak in meetings hosted by IEEE Chapters and
                 Sections. The operation of DLP is governed by a charter which council has recently adopted
-                and is available <a className="lecture" href={pdf} target="_blank">here</a>. 
-                The council has earlier endorsed two Distinguished Biometrics Lecturers.</span></p>
+                and is available <a className="lecture" href={pdf} target="_blank">here</a>.</span></p> 
+                
     
         </div>
         <div>
-              <p><span className="google-form">To organize a distinguished lecture, please fill the <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" > DLP Speaker Request Form</a> </span>
-              </p>
+        <p><span className="google-form">To organize a distinguished lecture, please read the <a className="lecture" href={pdf} target="_blank">guidelines</a> and submit a completed <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" >
+         DLP Speaker Request Form</a> </span></p>
         </div>
         </div> 
         <div class="title">
           <div class="left_border"></div>
-          <p class="mid_para">IEEE Biometrics Council DLP Speakers (2022-2024)</p>
+          <p class="mid_para">DLP Speakers (2022-2024)</p>
           <div class="right_border"></div>
         </div>
         <div className="content">
+        <Professor_Content
+            name="Joseph Bigun"
+            branch="abc"
+            biograhy = ""
+            university_name="Halmstad University, Sweden"
+            university_address=""
+            image={image1}
+            research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
+            lectures = {["Dense Maps of Orientation, Frequency and Phase for Explainable Biometrics",
+                         "Fundamentals of Image Processing for Fingerprints by Wave and Particle Natures of Local Patches",
+                         ]}
+            show = {showpop}
+            content={["A summary of main Fourier features along with their importance to human visual" + 
+                      " intelligence will be given. These features comprise local direction, local (absolute)" + 
+                      " frequency, and local phase which in turn drive more complex models of shape, also they" + 
+                      " being dense.\n" + 
+                      "Whereas fingerprint wave structures can be modelled by frequency and direction maps" + 
+                      " alone, minutiae in the form of ridge ends and bifurcations call for modelling these as first" + 
+                      " order angular variation of local phase. Likewise, complex global patterns in the form of" + 
+                      " cores and deltas demand a modelling of dense direction maps using angular variations" + 
+                      " of order 1 and -1. Similar example applications from other biometrics will be visited," + 
+                      " including identity recognition using iris, periocular regions, lip movements, and full faces.\n" + 
+                      "However intricate, the underlying shape models demand a principled and robust" + 
+                      " estimation of local direction and frequency, independent of each other. With such" + 
+                      " estimations at hand one can recognize more complex patterns, including those using local" + 
+                      " phase, as delivered by Gabor filters associated with estimated frequencies and directions." + 
+                      " Tools using complex valued filters on complex valued dense maps, easing the practice" + 
+                      " of more intricate shape recognition will be presented. Examples of shape models built on" + 
+                      " top of basic dense fields, which in themselves yield dense responses, will be given along" + 
+                      " their use..",
+                      "A characteristics of a physical wave is that it is everywhere and cannot be confined to a" + 
+                      " location. In images, texture is a local property defined by translation invariance of the local" + 
+                      " appearance. It is hard to define a location inside a texture uniquely by observing the local" + 
+                      " pattern around the location. Examples in fingerprints are patches with slow orientation" + 
+                      " and frequency changes at locations far away from deltas and cores. The more it is difficult" + 
+                      " to define a location by image measurements of an image patch, the more the patch" + 
+                      " exhibits wave property.\n" + 
+                      "On the other hand, a particle in physics is characterized by its infinitely precise location." + 
+                      " In images too, it is sometimes possible to define a location very precisely by measuring" + 
+                      " image pattern properties around the location, which is the opposite of a texture patch. In" + 
+                      " fingerprints, delta and core are example patterns which can define a location rather" + 
+                      " precisely and uniquely at macro scale. Even in micro scale such patterns exist: ridge ends" + 
+                      " and bifurcations, also known as minutiae. In line with this division of pattern" + 
+                      " characteristics, there exist image measurements that are more suitable for each of the" + 
+                      " two cathegories of image patches. Wave properties can be obtained by measuring" + 
+                      " spectral energy properties, the most known example yielding dense orientation fields." + 
+                      " Likewise, patches having particle nature can be described most effectively by their own" + 
+                      " tools, to the effect that by using them not only one can detect locations precisely but also" + 
+                      " systemize and explain what one is measuring. Examples include direction estimation in" + 
+                      " harmonic coordinates yielding precise localization of cores, deltas as well as minutiae," + 
+                      " each turning out to be a special type of direction measurement but in non-cartesian" + 
+                      " coordinates.."]}
+          />
           <Professor_Content
             name="Kevin Bowyer"
-            biograhy = "abc"
+            biograhy = ""
             branch=" Computer Science and Engineering"
             university_name="University of Notre Dame, USA"
             university_address=""
@@ -81,7 +134,7 @@ const Professor = (props) => {
 
           <Professor_Content
             name="Mark Nixon"
-            biograhy = "abc"
+            biograhy = ""
             branch="Electronics and Computer Science"
             university_name="University of Southampton, UK"
             university_address=""
@@ -89,8 +142,8 @@ const Professor = (props) => {
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
             lectures = {["Future of Biometrics",
                          "Biometrics and Forensics",
-                         "Gait and Soft Biometrics",
-                         "Soft Biometrics"]}
+                         "Gait and Soft Biometrics"
+                         ]}
             show = {showpop}
             content={["Biometrics has made amazing progress in its (relatively) short history. This speaker" +
                       " started his research in 1984, on face recognition, before it was even called biometrics." +
@@ -133,26 +186,12 @@ const Professor = (props) => {
                       " the clothing, and are our current work shows how the labels can be derived by computer" +
                       " vision and explores the new information available by the interface between semantic" +
                       " description and automated recognition. This talk thus surveys these areas, describing" +
-                      " progress in gait and in soft biometrics.",
-                      "This talk will focus on identifying people in surveillance imagery. This is needed by society" +
-                      " to solve crimes where imagery is at low resolution and faces and other traditional" +
-                      " discriminatory information is not available. Soft Biometrics is a relatively new field wherein" +
-                      " the majority of new techniques augment traditional ‘hard’ biometrics data with soft" +
-                      " measures. These measures are perceived to have low discriminatory ability, though can" +
-                      " be used to increase the performance of a traditional biometric system, e.g. by augmenting" +
-                      " data with estimates of age and gender. At Southampton we have been working on using" +
-                      " these measures for identification alone. It required a totally new approach using human" +
-                      " derived labels. These are then used for recognition. They can also be used to prime" +
-                      " computer vision systems to estimate the labels a human would describe. It’s a totally new" +
-                      " area encompassing computer science and psychology, bridging the semantic gap" +
-                      " between computer and human vision. The labels ae used to describe the body, he face" +
-                      " and the clothing for recognition. I will describe the background, motivation and" +
-                      " accomplishments of these fascinating new approaches."]}
+                      " progress in gait and in soft biometrics."]}
           />
 
           <Professor_Content
             name="Sharath Pankanti"
-            biograhy = "abc"
+            biograhy = ""
             branch="Computer Science"
             university_name="Microsoft, USA"
             university_address=""
@@ -202,137 +241,6 @@ const Professor = (props) => {
                       " between accuracy, security level, and computational time. We strongly believe our work" + 
                       " will enable the next generation of biometrics systems affording biometrics recognition" + 
                       " from encrypted data and thus overcoming many of the privacy concerns."]}
-          />
-
-          <Professor_Content
-            name="Xilin Chen"
-            biograhy = "abc"
-            branch="abc"
-            university_name="Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China"
-            university_address=""
-            image={image5}
-            research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
-            lectures = {["Hand Gesture Recognition and Interaction",
-                        "Towards Understandable Computer Vision",
-                        "Health Perception from Face and Action"]}
-            show = {showpop}
-            content={["Gesture has emerged as an important component for biometrics authentication and day-" + 
-                      " to-day interaction in our lives. It is also widely used in traffic control, marine" + 
-                      " communication, etc. Gesture can even extend to form a kind of language -- sign language." + 
-                      " Sign language contains a larger vocabulary set and has become a major communication" + 
-                      " tool among the Deaf. Gesture recognition provides not only human-human" + 
-                      " communication, but also human-machine interaction for a range of biometrics" + 
-                      " applications. This talk will firstly introduce challenges in hand gesture recognition, and" + 
-                      " then discuss the advances in hand gesture and sign language recognition.",
-                      " (This talk title can be preferably for the undergraduate students or industry)" + 
-                      " In the past decades, computer vision-based biometrics has become the hottest area in" + 
-                      " artificial intelligence due to it can offer similar or better results, in some typical tasks such" + 
-                      " as the recognition of objects or humans, than those performed by humans. However," + 
-                      " most current computer vision systems are designed for specific task(s) in the close world," + 
-                      " and hard to deal with open world cases. Flat structure for specific task(s) without" + 
-                      " reasoning and lack of knowledge are the major barriers toward a flexible computer vision" + 
-                      " system. For this purpose, a key factor is understandable or interpretable. Therefore," + 
-                      " objects should be processed in a contextual environment rather than a solo one with a" + 
-                      " simple identity, and objects should also be associated with relevant concepts. A" + 
-                      " conceptual mapping of a given image brings enhanced representation, which can support" + 
-                      " versatile tasks. In this talk, I will briefly review the current state of computer vision, and" + 
-                      " talk about some open problems. I will then share my points on these relevant problems." + 
-                      " Some of our efforts towards understandable computer vision are reported, including" + 
-                      " hierarchical object detection and categorization, scene graph construction and its" + 
-                      " application, unseen object inference, etc.",
-                      "Human Faces are widely used in Biometrics and can reveal range of other features that" + 
-                      " can not just improve the personal identification but also advance healthcare technologies." + 
-                      " Similarly the human actions and gait data can also reveal such intrinsic healthcare" + 
-                      " parameters for a range of real world applications and assessments. During last several" + 
-                      " years, our research group has investigated a range such problems and developed" + 
-                      " applications. This talk will discuss on such challenges and technologies for healthcare" + 
-                      " advancements."]}
-          />
-
-         <Professor_Content
-            name="Yasushi Yagi"
-            biograhy = "abc"
-            branch="Computer Science"
-            university_name="Osaka University, Japan"
-            university_address=""
-            image={image6}
-            research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
-            lectures = {["Human Gait Analysis for Biometrics and Forensics",
-                          "Personal Emotions and Psychophysiological Analysis from Human Gait"]}
-            show = {showpop}
-            content={["We have been studying human gait analysis for more than 15 years. Because everyone's" + 
-                      " walking style is unique, human gait is a prime candidate for person authentication tasks." + 
-                      " Our gait analysis technologies are now being used in real criminal investigations." + 
-                      `\n` +                                
-                                                  
-  
-                                                                                                                        
-                        "We have constructed a very large-scale gait database, and proposed several methods of" + 
-                      " gait analysis. The appearances of gait patterns are influenced by changes in viewpoint," + 
-                      " walking direction, speed, clothes, and shoes. To overcome these problems, we have" + 
-                      " proposed several approaches using a part-based method, an appearance-based view" + 
-                      " transformation model, a periodic temporal super resolution method, a manifold-based" + 
-                      " method and score-level fusion. During this talk, I will also present the experimental results" + 
-                      " to show the efficiency of our approaches on the large-scale gait database.",
-                      "Human gait can be conveniently acquired from a-distance and also widely accessible" + 
-                      " from the publicly installed surveillance systems. During this talk, I will present a new focus" + 
-                      " on the gait analysis to detect emotions from the persons gait patterns. The objective of" + 
-                      " such study is predict human emotion and mental condition, and for the people" + 
-                      " surrounding us. During this talk, I will also introduce some studies on its medical" + 
-                      " applications."]}
-          />
-
-          <Professor_Content
-            name="Joseph Bigun"
-            branch="abc"
-            university_name="Halmstad University, Sweden"
-            university_address=""
-            image={image1}
-            research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
-            lectures = {["Dense Maps of Orientation, Frequency and Phase for Explainable Biometrics",
-                         "Fundamentals of Image Processing for Fingerprints by Wave and Particle Natures of Local Patches",
-                         ]}
-            show = {showpop}
-            content={["A summary of main Fourier features along with their importance to human visual" + 
-                      " intelligence will be given. These features comprise local direction, local (absolute)" + 
-                      " frequency, and local phase which in turn drive more complex models of shape, also they" + 
-                      " being dense.\n" + 
-                      "Whereas fingerprint wave structures can be modelled by frequency and direction maps" + 
-                      " alone, minutiae in the form of ridge ends and bifurcations call for modelling these as first" + 
-                      " order angular variation of local phase. Likewise, complex global patterns in the form of" + 
-                      " cores and deltas demand a modelling of dense direction maps using angular variations" + 
-                      " of order 1 and -1. Similar example applications from other biometrics will be visited," + 
-                      " including identity recognition using iris, periocular regions, lip movements, and full faces.\n" + 
-                      "However intricate, the underlying shape models demand a principled and robust" + 
-                      " estimation of local direction and frequency, independent of each other. With such" + 
-                      " estimations at hand one can recognize more complex patterns, including those using local" + 
-                      " phase, as delivered by Gabor filters associated with estimated frequencies and directions." + 
-                      " Tools using complex valued filters on complex valued dense maps, easing the practice" + 
-                      " of more intricate shape recognition will be presented. Examples of shape models built on" + 
-                      " top of basic dense fields, which in themselves yield dense responses, will be given along" + 
-                      " their use..",
-                      "A characteristics of a physical wave is that it is everywhere and cannot be confined to a" + 
-                      " location. In images, texture is a local property defined by translation invariance of the local" + 
-                      " appearance. It is hard to define a location inside a texture uniquely by observing the local" + 
-                      " pattern around the location. Examples in fingerprints are patches with slow orientation" + 
-                      " and frequency changes at locations far away from deltas and cores. The more it is difficult" + 
-                      " to define a location by image measurements of an image patch, the more the patch" + 
-                      " exhibits wave property.\n" + 
-                      "On the other hand, a particle in physics is characterized by its infinitely precise location." + 
-                      " In images too, it is sometimes possible to define a location very precisely by measuring" + 
-                      " image pattern properties around the location, which is the opposite of a texture patch. In" + 
-                      " fingerprints, delta and core are example patterns which can define a location rather" + 
-                      " precisely and uniquely at macro scale. Even in micro scale such patterns exist: ridge ends" + 
-                      " and bifurcations, also known as minutiae. In line with this division of pattern" + 
-                      " characteristics, there exist image measurements that are more suitable for each of the" + 
-                      " two cathegories of image patches. Wave properties can be obtained by measuring" + 
-                      " spectral energy properties, the most known example yielding dense orientation fields." + 
-                      " Likewise, patches having particle nature can be described most effectively by their own" + 
-                      " tools, to the effect that by using them not only one can detect locations precisely but also" + 
-                      " systemize and explain what one is measuring. Examples include direction estimation in" + 
-                      " harmonic coordinates yielding precise localization of cores, deltas as well as minutiae," + 
-                      " each turning out to be a special type of direction measurement but in non-cartesian" + 
-                      " coordinates.."]}
           />
           <Professor_Content
             name="Venu Govindaraju"
@@ -384,6 +292,87 @@ const Professor = (props) => {
                       " gives significantly better results for a class of occupancy-related queries compared with query-" + 
                       " independent metrics."]}
           />
+
+          <Professor_Content
+            name="Xilin Chen"
+            biograhy = ""
+            branch="abc"
+            university_name="Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China"
+            university_address=""
+            image={image5}
+            research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
+            lectures = {["Hand Gesture Recognition and Interaction",
+                        "Towards Understandable Computer Vision",
+                        "Health Perception from Face and Action"]}
+            show = {showpop}
+            content={["Gesture has emerged as an important component for biometrics authentication and day-" + 
+                      " to-day interaction in our lives. It is also widely used in traffic control, marine" + 
+                      " communication, etc. Gesture can even extend to form a kind of language -- sign language." + 
+                      " Sign language contains a larger vocabulary set and has become a major communication" + 
+                      " tool among the Deaf. Gesture recognition provides not only human-human" + 
+                      " communication, but also human-machine interaction for a range of biometrics" + 
+                      " applications. This talk will firstly introduce challenges in hand gesture recognition, and" + 
+                      " then discuss the advances in hand gesture and sign language recognition.",
+                      " (This talk title can be preferably for the undergraduate students or industry)" + 
+                      " In the past decades, computer vision-based biometrics has become the hottest area in" + 
+                      " artificial intelligence due to it can offer similar or better results, in some typical tasks such" + 
+                      " as the recognition of objects or humans, than those performed by humans. However," + 
+                      " most current computer vision systems are designed for specific task(s) in the close world," + 
+                      " and hard to deal with open world cases. Flat structure for specific task(s) without" + 
+                      " reasoning and lack of knowledge are the major barriers toward a flexible computer vision" + 
+                      " system. For this purpose, a key factor is understandable or interpretable. Therefore," + 
+                      " objects should be processed in a contextual environment rather than a solo one with a" + 
+                      " simple identity, and objects should also be associated with relevant concepts. A" + 
+                      " conceptual mapping of a given image brings enhanced representation, which can support" + 
+                      " versatile tasks. In this talk, I will briefly review the current state of computer vision, and" + 
+                      " talk about some open problems. I will then share my points on these relevant problems." + 
+                      " Some of our efforts towards understandable computer vision are reported, including" + 
+                      " hierarchical object detection and categorization, scene graph construction and its" + 
+                      " application, unseen object inference, etc.",
+                      "Human Faces are widely used in Biometrics and can reveal range of other features that" + 
+                      " can not just improve the personal identification but also advance healthcare technologies." + 
+                      " Similarly the human actions and gait data can also reveal such intrinsic healthcare" + 
+                      " parameters for a range of real world applications and assessments. During last several" + 
+                      " years, our research group has investigated a range such problems and developed" + 
+                      " applications. This talk will discuss on such challenges and technologies for healthcare" + 
+                      " advancements."]}
+          />
+
+         <Professor_Content
+            name="Yasushi Yagi"
+            biograhy = ""
+            branch="Computer Science"
+            university_name="Osaka University, Japan"
+            university_address=""
+            image={image6}
+            research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
+            lectures = {["Human Gait Analysis for Biometrics and Forensics",
+                          "Personal Emotions and Psychophysiological Analysis from Human Gait"]}
+            show = {showpop}
+            content={["We have been studying human gait analysis for more than 15 years. Because everyone's" + 
+                      " walking style is unique, human gait is a prime candidate for person authentication tasks." + 
+                      " Our gait analysis technologies are now being used in real criminal investigations." + 
+                      `\n` +                                
+                                                  
+  
+                                                                                                                        
+                        "We have constructed a very large-scale gait database, and proposed several methods of" + 
+                      " gait analysis. The appearances of gait patterns are influenced by changes in viewpoint," + 
+                      " walking direction, speed, clothes, and shoes. To overcome these problems, we have" + 
+                      " proposed several approaches using a part-based method, an appearance-based view" + 
+                      " transformation model, a periodic temporal super resolution method, a manifold-based" + 
+                      " method and score-level fusion. During this talk, I will also present the experimental results" + 
+                      " to show the efficiency of our approaches on the large-scale gait database.",
+                      "Human gait can be conveniently acquired from a-distance and also widely accessible" + 
+                      " from the publicly installed surveillance systems. During this talk, I will present a new focus" + 
+                      " on the gait analysis to detect emotions from the persons gait patterns. The objective of" + 
+                      " such study is predict human emotion and mental condition, and for the people" + 
+                      " surrounding us. During this talk, I will also introduce some studies on its medical" + 
+                      " applications."]}
+          />
+
+          
+          
         </div>
       </div>
     </>
