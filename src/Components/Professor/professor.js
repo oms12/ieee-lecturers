@@ -31,6 +31,7 @@ const Professor = (props) => {
               The purpose of DLP is to increase awareness about topics relevant to Biometrics by creating
               a pool of leading experts who are willing to speak in meetings hosted by IEEE Chapters and
                 Sections. The operation of DLP is governed by a charter which council has recently adopted
+<<<<<<< HEAD
                 and is available <a className="lecture" href={pdf} target="_blank">here</a>.</span></p> 
                 
     
@@ -38,6 +39,15 @@ const Professor = (props) => {
         <div>
         <p><span className="google-form">To organize a distinguished lecture, please read the <a className="lecture" href={pdf} target="_blank">guidelines</a> and submit a completed <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" >
          DLP Speaker Request Form</a> </span></p>
+=======
+                and is available <a className="lecture" href={pdf} target="_blank">here</a>. 
+                </span></p>
+    
+        </div>
+        <div>
+              <p><span className="google-form">To organize a distinguished lecture, please read the <a className="lecture" href={pdf} target="_blank">guidelines</a> and submit a completed <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" > DLP Speaker Request Form</a> </span>
+              </p>
+>>>>>>> f440a9dab186c2855702d298932ead12eba86911
         </div>
         </div> 
         <div class="title">
