@@ -5,9 +5,9 @@ import image1 from "../../image/jseph bigun.jpg";
 import image2 from "../../image/kewin.jpg";
 import image3 from "../../image/mark nixon.jpg";
 import image4 from "../../image/sharath pankanti.jpg";
+import image7 from "../../image/venu.jpg";
 import image5 from "../../image/xilin chen.jpg";
 import image6 from "../../image/yashsuhi yagi.jpg";
-import image7 from "../../image/venu.jpg";
 import Popup from "../Popupdata/Popupdata";
 const Professor = (props) => {
   function showpop(ok,lecture,content)
@@ -42,7 +42,7 @@ const Professor = (props) => {
         </div> 
         <div class="title">
           <div class="left_border"></div>
-          <p class="mid_para">CURRENT DLP SPEAKERS</p>
+          <p class="mid_para">IEEE Biometrics Council DLP Speakers (2022-2024)</p>
           <div class="right_border"></div>
         </div>
         <div className="content">
@@ -50,7 +50,7 @@ const Professor = (props) => {
             name="Kevin Bowyer"
             biograhy = "abc"
             branch=" Computer Science and Engineering"
-            university_name="University of Notre Dame"
+            university_name="University of Notre Dame, USA"
             university_address=""
             image={image2}
             research_topics = {[" abc, ","pqr"]}
@@ -83,7 +83,7 @@ const Professor = (props) => {
             name="Mark Nixon"
             biograhy = "abc"
             branch="Electronics and Computer Science"
-            university_name="University of Southampton"
+            university_name="University of Southampton, UK"
             university_address=""
             image={image3}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -151,10 +151,10 @@ const Professor = (props) => {
           />
 
           <Professor_Content
-            name="Sarath Pankanti"
+            name="Sharath Pankanti"
             biograhy = "abc"
             branch="Computer Science"
-            university_name="IBM Research"
+            university_name="Microsoft, USA"
             university_address=""
             image={image4}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -208,7 +208,7 @@ const Professor = (props) => {
             name="Xilin Chen"
             biograhy = "abc"
             branch="abc"
-            university_name="Institute of Computing Technology, Chinese Academy of Sciences"
+            university_name="Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China"
             university_address=""
             image={image5}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -253,7 +253,7 @@ const Professor = (props) => {
             name="Yasushi Yagi"
             biograhy = "abc"
             branch="Computer Science"
-            university_name="Osaka University"
+            university_name="Osaka University, Japan"
             university_address=""
             image={image6}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -285,7 +285,7 @@ const Professor = (props) => {
           <Professor_Content
             name="Joseph Bigun"
             branch="abc"
-            university_name="Halmstad University"
+            university_name="Halmstad University, Sweden"
             university_address=""
             image={image1}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -338,7 +338,7 @@ const Professor = (props) => {
             name="Venu Govindaraju"
             biograhy = "abc"
             branch="Computer Science and Engineering"
-            university_name="State University of New York, Buffalo"
+            university_name="State University of New York, Buffalo, USA"
             university_address=""
             image={image7}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -348,7 +348,7 @@ const Professor = (props) => {
             show = {showpop} 
             content={["We present an overview of two decades of innovation in" + 
                       " perspective on the evolution of research in this area and the future of the field. We highlight" + 
-                      " handwriting recognition at the Govindaraju lab at the University at Buffalo and offer a" + 
+                      " handwriting recognition at the Govindaraju lab at the University at Buffalo and offer" + 
                       " our seminal work in handwriting recognition that was at the core of the first handwritten" + 
                       " address interpretation system used by the U.S. Postal Service, described as one of the first" + 
                       " practical success stories of AI and as a shining example of AI for the Social Good (Eric Horvitz," + 
@@ -358,7 +358,7 @@ const Professor = (props) => {
                       " our research, from the processing of healthcare forms for the NYS Department of Health for" + 
                       " deriving early indicators of outbreaks, to access to historical documents through word spotting," + 
                       " transcript mapping and other indexing schemes for digital libraries, to award-winning pre-" + 
-                      " processing techniques and multilingual OCR solutions.",
+                      "processing techniques and multilingual OCR solutions.",
                       "Given the pervasive use of e-commerce transactions and personal" + 
                       " and protects the privacy and online assets of individuals and organizations. We recommend a" + 
                       " data storage in the cloud, society has an urgent need for a robust process that authenticates" + 
