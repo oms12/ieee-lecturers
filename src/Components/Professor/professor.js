@@ -256,7 +256,7 @@ const Professor = (props) => {
             name="Venu Govindaraju"
             biograhy = "abc"
             branch="Computer Science and Engineering"
-            university_name="State University of New York, Buffalo, USA"
+            university_name="University at Buffalo, SUNY, USA"
             university_address=""
             image={image7}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
