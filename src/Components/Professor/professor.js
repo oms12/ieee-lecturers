@@ -1,5 +1,6 @@
 import "./professor.css";
-import pdf from "../../image/Charter_DLP_BC.pdf"
+import pdf1 from "../../image/Charter_DLP_BC.pdf"
+import pdf2 from "../../image/Guidelines.pdf"
 import Professor_Content from "./professorcontent.js";
 import image1 from "../../image/jseph bigun.jpg";
 import image2 from "../../image/kewin.jpg";
@@ -21,7 +22,7 @@ const Professor = (props) => {
       <div className="container">
       <div class="page-header">
         <div className="main-header">
-            <h2>
+            <h2 className="main-heading">
             DISTINGUISHED LECTURERS PROGRAM (DLP)		
           </h2>  
         </div>
@@ -31,23 +32,13 @@ const Professor = (props) => {
               The purpose of DLP is to increase awareness about topics relevant to Biometrics by creating
               a pool of leading experts who are willing to speak in meetings hosted by IEEE Chapters and
                 Sections. The operation of DLP is governed by a charter which council has recently adopted
-<<<<<<< HEAD
-                and is available <a className="lecture" href={pdf} target="_blank">here</a>.</span></p> 
-                
-    
-        </div>
-        <div>
-        <p><span className="google-form">To organize a distinguished lecture, please read the <a className="lecture" href={pdf} target="_blank">guidelines</a> and submit a completed <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" >
-         DLP Speaker Request Form</a> </span></p>
-=======
-                and is available <a className="lecture" href={pdf} target="_blank">here</a>. 
+                and is available <a className="lecture" href={pdf1} target="_blank">here</a>. 
                 </span></p>
     
         </div>
         <div>
-              <p><span className="google-form">To organize a distinguished lecture, please read the <a className="lecture" href={pdf} target="_blank">guidelines</a> and submit a completed <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" > DLP Speaker Request Form</a> </span>
+              <p><span className="google-form">To organize a distinguished lecture, please read the <a className="lecture" href={pdf2} target="_blank">guidelines</a> and submit a completed <a className="lecture" href="https://forms.gle/U2p1mKxRbqVFLMBL7" target="_blank" > DLP Speaker Request Form</a> </span>
               </p>
->>>>>>> f440a9dab186c2855702d298932ead12eba86911
         </div>
         </div> 
         <div class="title">
@@ -59,7 +50,7 @@ const Professor = (props) => {
         <Professor_Content
             name="Joseph Bigun"
             branch="abc"
-            biograhy = ""
+            biograhy = "http://www2.hh.se/staff/josef/"
             university_name="Halmstad University, Sweden"
             university_address=""
             image={image1}
@@ -111,7 +102,7 @@ const Professor = (props) => {
           />
           <Professor_Content
             name="Kevin Bowyer"
-            biograhy = ""
+            biograhy = "https://www3.nd.edu/~kwb/"
             branch=" Computer Science and Engineering"
             university_name="University of Notre Dame, USA"
             university_address=""
@@ -144,7 +135,7 @@ const Professor = (props) => {
 
           <Professor_Content
             name="Mark Nixon"
-            biograhy = ""
+            biograhy = "https://www.ecs.soton.ac.uk/people/msn"
             branch="Electronics and Computer Science"
             university_name="University of Southampton, UK"
             university_address=""
@@ -201,7 +192,7 @@ const Professor = (props) => {
 
           <Professor_Content
             name="Sharath Pankanti"
-            biograhy = ""
+            biograhy = "https://www.linkedin.com/in/sharath-pankanti-a9779834"
             branch="Computer Science"
             university_name="Microsoft, USA"
             university_address=""
@@ -254,9 +245,9 @@ const Professor = (props) => {
           />
           <Professor_Content
             name="Venu Govindaraju"
-            biograhy = "abc"
+            biograhy = "https://www.buffalo.edu/cubs/members/venu-govindaraju.html"
             branch="Computer Science and Engineering"
-            university_name="State University of New York, Buffalo, USA"
+            university_name="University at Buffalo, SUNY, USA"
             university_address=""
             image={image7}
             research_topics = {[" abcddddddddddddddddd, ","pqrdddddddddddddddddd"]}
@@ -305,7 +296,7 @@ const Professor = (props) => {
 
           <Professor_Content
             name="Xilin Chen"
-            biograhy = ""
+            biograhy = "http://people.ucas.ac.cn/~xlchen?language=en"
             branch="abc"
             university_name="Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China"
             university_address=""
@@ -350,7 +341,7 @@ const Professor = (props) => {
 
          <Professor_Content
             name="Yasushi Yagi"
-            biograhy = ""
+            biograhy = "https://www.ist.osaka-u.ac.jp/english/introduction/professors/computer-science/intelligent-media-systems/yasushi-yagi.html"
             branch="Computer Science"
             university_name="Osaka University, Japan"
             university_address=""

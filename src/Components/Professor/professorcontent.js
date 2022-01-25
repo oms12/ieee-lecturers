@@ -19,10 +19,7 @@ const Professor_Content = ({
       </div>
       <div class="writing-part">
         <p>
-          <b className = "name" onClick={()=>
-                    {
-                      show(true,name,biograhy);
-                    }}>{name}</b>
+          <a className = "name" href={biograhy} target="_blank">{name}</a>
         </p>
         {/* <p>{branch}</p> */}
         <p>{university_name}</p>

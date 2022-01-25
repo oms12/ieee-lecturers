@@ -11,7 +11,7 @@
 .container {
   width: 70%;
   height: 130vh;
-
+  text-align: justify;
   margin-left: 15%;
   margin-top: 5vh;
   position: relative;
@@ -72,7 +72,7 @@
   width: 70%;
   height: 90%;
   margin-top: 7%;
-
+  
   position: absolute;
 }
 
@@ -111,6 +111,7 @@
   /* margin-left: -150px; */
   margin-top: 25px;
   width: 100%;
+  text-align: justify;
 }
 a:hover{
   
@@ -123,7 +124,10 @@ a:hover{
   color: blue;
   white-space: pre-wrap;
 }
-
+.name{
+  color:black;
+  font-weight: bolder;
+}
 .name:hover{
   cursor: pointer;
   border-bottom: 2px solid green;
@@ -156,6 +160,18 @@ a:hover{
     margin-top: 10%;
   
     position: absolute;
+  }
+  .container
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+  }
+  .lower_part {
+    margin-left: 5%;
+  }
+  .main-heading{
+    text-align: center;
   }
   
 }
